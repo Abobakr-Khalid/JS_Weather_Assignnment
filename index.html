@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav class="bg-dark p-5">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div
+            class="logo d-flex align-items-center justify-content-center column-gap-3"
+          >
+            <img src="images/logo.png" class="object-fit-contain" alt="" />
+            <div class="logo-txt">
+              <h2 class="text-white m-0 fs-6">Weather</h2>
+              <p class="text-secondary small m-0">tagline goes here</p>
+            </div>
+          </div>
+
+          <div class="nav-links">
+            <ul class="d-md-flex d-none column-gap-5">
+              <li>
+                <a
+                  class="text-decoration-none px-4 py-1 border border-primary border-2 rounded-pill text-primary"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="#">News</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="#"
+                  >Live Cameras</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="#">Photos</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+
+    <main class="main-section">
+      <div class="container">
+        <div
+          class="location-input d-flex justify-content-end align-items-center position-relative"
+        >
+          <input
+            type="text"
+            id="findLocation"
+            class="form-control my-5 py-3 px-3 bg-dark border border-0 rounded-pill shadow-none text-white"
+            placeholder="Find your location..."
+          />
+          <button
+            class="find-btn btn btn-primary px-5 py-2 me-2 border border-0 rounded-pill position-absolute"
+          >
+            Find
+          </button>
+        </div>
+      <div id="cards">
+        <div class="row">
+          <div class="todayCard col-md-4 position-relative">
+                <div class="todayData position-absolute top-0 start-0 end-0 w-100 d-flex justify-content-between">
+                        <h5 class = 'fs-4' id="todayName">random</h5>
+                        <h5 class = 'fs-4' id="todayDate">random</h5>
+                </div>
+                <div class="tempData text-white py-5">
+                    <h5 id = 'city' class="fw-light text-info">random</h5>
+                    <h1 id="temperature" class="display-2 fw-bold px-5">random</h1>
+                    <p class="text-primary" id="tempText">random</p>
+                    <img src="" alt="" id="tempIcon" class="w-25">
+                    <br>
+                    <i class="fa-solid fa-umbrella text-dark"><span class="text-white" id = 'humidity'></span></i>
+                    <i class="fa-solid fa-wind text-dark"><span class="text-white" id = 'wind-speed'></span></i>
+                    <i class="fa-solid fa-compass text-dark"><span class="text-white" id = 'wind-direction'></span></i>
+                </div>
+          </div>
+
+          <div id="nextDaysCard" class="col-md-4 mt-2 mt-md-0 text-white text-center d-flex flex-column justify-content-center position-relative">
+            <h5 class = 'nextDayName position-absolute top-0 start-0 end-0 mt-1' id="todayName">random</h5>
+            <i></i>
+            <h3 id = "nextMaxTemp" class="mt-4">random <sup>o</sup>C</h3>
+            <h5 id = "nextMinTemp" class="text-secondary mt-2">random <sup>o</sup>C</h5>
+            <span id="nextTempText" class="mt-4">random</span>
+          </div>
+
+          <div id="nextDaysCard" class="col-md-4 mt-2 mt-md-0 text-white text-center d-flex flex-column justify-content-center position-relative">
+            <h5 class = 'nextDayName position-absolute top-0 start-0 end-0 mt-1' id="todayName">random</h5>
+            <i></i>
+            <h3 id = "nextMaxTemp" class="mt-4">random <sup>o</sup>C</h3>
+            <h5 id = "nextMinTemp" class="text-secondary mt-2">random <sup>o</sup>C</h5>
+            <span id="nextTempText" class="mt-4">random</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <footer class="bg-dark">
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
